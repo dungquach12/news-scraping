@@ -1,6 +1,6 @@
 # VnExpress News Scraper
 
-Scrapy project for collecting articles from Thời sự topic [vnexpress.net](https://vnexpress.net/thoi-su).
+Scrapy project for collecting articles from Thời sự topic [vnexpress.net/thoi-su](https://vnexpress.net/thoi-su).
 
 ## Features
 - Crawls article pages
