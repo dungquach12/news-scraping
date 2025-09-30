@@ -1,0 +1,9 @@
+*.jsonl
+*.csv
+*.xlsx
+*.log
+__pycache__/
+*.pyc
+.env
+.venv/
+*.sqlite3
