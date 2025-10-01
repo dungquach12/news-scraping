@@ -1,6 +1,7 @@
 import json
 import pandas as pd
 from itemadapter import ItemAdapter
+from .utils import format_datetime
 
 class NewsscrapingPipeline:
     def open_spider(self, spider):
@@ -16,6 +17,9 @@ class NewsscrapingPipeline:
 
     def process_item(self, item, spider):
         data = ItemAdapter(item).asdict()
+        if data.get("posted_time"):
+            data["posted_time"] = format_datetime(data["posted_time"])
+
         line = json.dumps(data, ensure_ascii=False) + "\n"
         self.file.write(line)
         self.items.append(data)
