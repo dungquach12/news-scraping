@@ -20,4 +20,4 @@ scrapy crawl news
 ```
 
 ## Implement in future:
-- Sovle lazyloading issue, maybe change crawling tool
+- Solve lazyloading issue, maybe change crawling tool
