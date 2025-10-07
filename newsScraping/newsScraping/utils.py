@@ -20,7 +20,7 @@ def format_datetime(time_str):
         dt = datetime.strptime(datetime_part, "%d/%m/%Y, %H:%M")
 
         # Attach timezone
-        dt = dt.replace(tzinfo=timezone(timedelta(hours=tz_offset)))
+        # dt = dt.replace(tzinfo=timezone(timedelta(hours=tz_offset)))
 
         return dt.isoformat()
 
